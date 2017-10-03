@@ -5,9 +5,11 @@
   "main": "index.js",
   "repository": "git@github.com:gsambrotta/weather-charts-redux.git",
   "scripts": {
+    "deploy": "cross-env NODE_ENV=production webpack --config ./webpack-production.config.js --progress --colors",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "abc": "echo This is the abc script"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +20,7 @@
     "babel-preset-react": "^6.1.18",
     "chai": "^3.5.0",
     "chai-jquery": "^2.0.0",
+    "cross-env": "^5.0.5",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
