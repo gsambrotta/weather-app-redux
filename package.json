@@ -7,7 +7,6 @@
   "repository": "git@github.com:gsambrotta/weather-charts-redux.git",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack-production.config.js --progress --colors",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
